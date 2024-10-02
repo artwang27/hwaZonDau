@@ -1,0 +1,44 @@
+【建置方法一】
+直接複製整個資料夾，更改新的資料夾名稱，開始作業
+
+
+【建置方法二】
+//初始化 typescript compiler
+tsc --init  //此時產生 tsconfig.json 檔
+
+//在tscconfig.json 裡指定根目錄
+"rootDir": "./src",
+"outDir": "./dist",
+//若未打開 inlineSourceMap，執行 debug 時默認指向 js 檔的哪一行
+"inlineSourceMap": true,    //打開此選項，執行時可反查出執行程序出自 ts 檔的哪一行
+關掉"module": "commonjs", 
+
+
+
+
+【編譯typescript的 .ts 成 .js 檔 】
+tsc filename.ts
+tsc     //若已經指定 rootDir，那直接呼叫 tsc 即可
+tsc --watch     //當原始檔存檔時，自動編譯程式
+
+
+【若要在瀏覽器下執行】
+1.請在 dist/index.html 加入
+<script type="module" src="./main.js"></script>
+
+2.提供 document 輸出的 element
+<div id="output"></div> 
+
+3.在VS code 執行 Live server
+
+
+【若要在 node 環境下執行】
+1.//產生 package.json
+npm init -yes   
+
+2.//在 package.json 裡加上
+"type":"module"
+
+3. node環境下執行 
+node ./dist/main.js
+

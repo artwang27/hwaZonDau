@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    font-family: "Noto Sans TC", system-ui;
+    font-size: 1.5em;
+    background-color: #82b2c2;
+
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+#panelSection{
+    background-color:#a2ddf1;
+}
+
+
+#chooseArea{
+    /* 為了保持左右有適當的空白 */
+    padding: 0px 50px;  
+    /* border: 2px solid black; */
+}
+
+#selectLevel{
+    /* 必須設定寬度，不然會自動以最小可視範圍為寬 */
+    width:250px;
+    font-size: 0.8em;
+}
+
+#btnSelecteDone{
+    height:50px;
+    width:100%;
+}

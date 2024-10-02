@@ -1,0 +1,41 @@
+https://artwang27.github.io/phoneTest/dist/index.html
+
+第4.1版，全部操作幾乎以 Board 型別為主，執行成功！亦可解題！
+
+
+第5.0版，去除 Board 類別別的mathod裡原本 board 參數成功！
+可以正確玩遊戲，但無法解題。
+
+
+第5.2版，把 Board 裡的方法全部改成箭頭函數， 可正常遊戲。
+但無法解題
+//加入 slove.ts 之後，函數引用發生問題，Board 及 slove 裡的方法全部改成箭頭函數，仍然執行失敗
+
+第5.2版，把 Board 裡的方法全部改成箭頭函數， 可正常遊戲，也可正常解題。
+
+
+第6.0版，用 div span 繪製棋子，完美！！
+
+第7.0版，用 canvas 繪製棋子
+第7.1版，用 canvas 繪製棋子，版面布局OK
+
+第8.0版，用手勢滑動手機或網頁，都OK
+第8.1版，加入播放按鈕群組
+第8.2版，可以選擇關卡
+
+
+
+華容道遊戲
+http://simonsays-tw.com/web/Klotski/game/klotski.puzzle.html
+http://simonsays-tw.com/web/Klotski/game/klotski.puzzle.html?l=3-40
+http://simonsays-tw.com/web/Klotski/game/klotskiDemo.html
+
+華容道解法說明
+http://simonsays-tw.com/web/Klotski/Klotski.html
+
+西洋棋
+https://www.youtube.com/watch?v=U4ogK0MIzqk&t=436s
+
+
+特殊符號
+https://tw.piliapp.com/symbol/

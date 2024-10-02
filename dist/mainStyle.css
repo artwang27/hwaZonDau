@@ -1,0 +1,137 @@
+padding/*漂亮的配色網站 http://www.eion.com.tw/Blogger/?Pid=1008 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+
+
+body {
+    font-family: "Noto Sans TC", system-ui;
+    font-size: 2em;
+
+    max-width: 1000px; /* 電腦版時主畫面的最大寬度 */    
+    background-color: #a5d2e1;
+
+    display: flex;
+    flex-direction: column;
+    /* 各個 dom 自動向豎向中軸靠齊 */
+    align-items: center;   
+} 
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    /* 所有div從螢幕上方開始放置 */
+    justify-content: flex-start;
+
+    /* 水平置中 */
+    align-items: center;    
+    text-align: center;
+
+    width: 90%;
+    height: 100%; /* 默認情況下全屏高度 */    
+}
+
+
+
+#title{
+    width:100%;
+    font-size: 0.7em;
+    /* border:#000 1px solid; */
+}
+
+
+/* 手機直立滿版顯示 */
+@media (max-width: 768px) {
+    #main {
+        background-color: #a2ddf1;
+    }
+}
+
+/* 電腦置中顯示 */
+@media (min-width: 769px) {
+    #main {
+        /* background-color: #f00; */
+        background-color: #a2ddf1;
+    }
+}
+
+canvas{
+    /* width:400px; */
+    /* height:550px;  */
+    width: 95%; 
+    height: auto;
+    
+    background-color:#2f67eb;
+    border: 3px solid #000;
+}
+
+
+
+
+
+#info{
+    font-size: 0.6em;
+}
+
+
+#buttons{
+    flex-direction: row;
+    justify-content:space-between;
+    width:100%;     /*必要，不然全部按鈕會聚在一起 */
+
+    /* display: flex;     */
+    display: none;    
+}
+
+.myButton{
+    color:#007bff;
+    /* border: 2px solid #007bff; */
+    border-radius: 5px;
+
+    text-align: center;
+    font-size: 0.6em;
+    cursor:pointer;
+}
+
+.buttonMoreBig{
+    width:20%;
+    padding: 5px;    
+    margin: 10px 5px;
+}
+
+.myButton:hover{
+    color:#fff;
+    background-color: #007bff;;
+    transition: 0.5s;
+}
+
+.myButton:active{
+    background-color: #ff00b3;
+    transition: 0.1s;
+}
+
+#toggleModeArea{
+    /* border: 3px solid rgb(234, 65, 65); */
+    width:100%; 
+}
+
+#btnTaggleMode{
+    width:50%;
+    padding: 5px;    
+}
+
+#nextPage{
+    width:80%;
+    font-size: 0.7em;
+}

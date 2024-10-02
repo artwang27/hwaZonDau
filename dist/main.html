@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>華容道</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="./mainStyle.css">
+
+    <link rel="shortcut icon" href="favicon.ico" /> 
+</head>
+
+<body>
+    <div id="main">
+        <section id="title">
+            <div><button id="nextPage" onclick="location.href='./levelChoose.html'"> 選擇關卡</button></div>
+            <div id="whichLevel">第一局</div>
+            <div id="levelName">橫刀立馬</div>
+        </section>
+        <section>
+            <!-- <canvas id="canvas" width="404" height="505"></canvas> -->
+            <canvas id="canvas" width="404" height="505""></canvas>
+        </section>
+        <section id="toggleModeArea">
+            <button class="myButton btnTaggleMode"  id="btnTaggleMode">電腦解題</button>
+        </section>
+        
+        <section id="buttons">
+
+            <button class="myButton buttonMoreBig" id="btnBegin">【⬅︎</button>
+            <button class="myButton buttonMoreBig" id="btnPrev">◀︎</button>
+            <button class="myButton buttonMoreBig" id="btnNext">▶︎</button>
+            <button class="myButton buttonMoreBig" id="btnEnd">➡︎】</button>
+
+
+        </section>
+        <section id="info">
+            訊息輸出
+        </section>
+
+    </div>
+
+
+
+
+</body>
+<script type="module" src="./mainApp.js"></script>
+
+</html>
